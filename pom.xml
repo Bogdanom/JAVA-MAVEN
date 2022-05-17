@@ -14,7 +14,7 @@
   
   <properties>
   
-  <aplication.password>null123</aplication.password>
+  <application.password>null123</application.password>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
   <jdk.source.version>1.8</jdk.source.version>

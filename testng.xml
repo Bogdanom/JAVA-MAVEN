@@ -3,24 +3,15 @@
 <suite name="Suite1">
   <test name="Test11">
     <classes>
-      <class name="tasks_tests.SumFingersTask87Test"/>
-      <class name="tasks_tests.CreateMatrixTask555Test"/>
-      <class name="tasks_tests.CalcQuantityTask178bTest">
+      <class name="com.softserve.edu.AppTest"/>
+     <!-- <class name="tasks_tests.CalcQuantityTask178bTest">
     	 <methods>
      		<include name="testNumberFigures"></include>
      	</methods>
      </class>
-      <class name="example_tests.ExceptionTest">
-    	 <methods>
-     		<include name="f"></include>
-     	</methods>
-     </class>
+     -->
     </classes>
-  </test> <!-- Test -->
+  </test>   
   
-  <test name="Test12">
-    <classes>
-      <class name="tasks_tests.SumFingersTask87Test"/>
-   </classes>
-  </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->

@@ -15,6 +15,7 @@ public class AppTest
 	@Test
     public void checkApp()
     {
-      System.out.println("System.getnv().MY_Password = "+System.getenv().get("MY_PASSWORD"));
-    }
+	  System.out.println("surefire.application.password = "+System.getProperty("surefire.application.password"));
+	  System.out.println("System.getnv().MY_Password = "+System.getenv().get("MY_PASSWORD"));
+       }
 }
