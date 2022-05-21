@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
@@ -13,14 +14,19 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ApplSelenOpencartTest {
+public class SelenOpencartTest {
 	private WebDriver driver;
 	
 	 @BeforeClass
 	    public void beforeClass() {
 		   WebDriverManager.chromedriver().setup();
-	       //System.setProperty("webdriver.chrome.driver", "./lib/chromedriver.exe");
+		  /// WebDriverManager.firefoxdriver().setup();
+	       //System.setProperty("webdriver.chrome.driver", "./lib/chromedriver.exe");// no need, used previous line to launch chromedriver 
 			driver = new ChromeDriver();
+		//	driver = new FirefoxDriver();
+			System.out.println("=+=webdriver.chrome.driver = " + System.getProperty("webdriver.chrome.driver"));
+		//	System.out.println("=+=webdriver.gecko.driver = " + System.getProperty("webdriver.gecko.driver"));//for firefox browser
+			
 			driver.manage().window().maximize();
 			driver.get("http://taqc-opencart.epizy.com/");
 			System.out.println("\t\t@BeforeClass");
@@ -34,7 +40,7 @@ public class ApplSelenOpencartTest {
 	    
 	    @BeforeTest
 	    public void beforeTest() {
-	    	 //driver.get("http://taqc-opencart.epizy.com/");
+	    	 //driver.get("http://taqc-opencart.epizy.com/");//doesn't work here, work in @BeforeClass
 	        System.out.println("\t@BeforeTest");
 	    }
 
@@ -47,8 +53,6 @@ public class ApplSelenOpencartTest {
 	    @Test
 	    public void f1() throws InterruptedException {
 	    	
-	    	//driver.get("http://taqc-opencart.epizy.com/");
-	    	//
 	    	driver.findElement(By.xpath("//button[@class='btn btn-link dropdown-toggle']")).click();
 	    	driver.findElement(By.xpath("//button[@name='EUR']")).click();
 	    	Thread.sleep(1000);//for presentation only

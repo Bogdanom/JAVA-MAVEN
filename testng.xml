@@ -3,14 +3,14 @@
 <suite name="Suite1">
   <test name="Test11">
     <classes>
-     <!-- <class name="com.softserve.edu.AppTest"/>   -->
-      <class name="com.softserve.edu.ApplSelenOpencartTest"/>
-     <!-- <class name="tasks_tests.CalcQuantityTask178bTest">
+   <!--   <class name="com.softserve.edu.AppTest"/>   
+      <class name="com.softserve.edu.SelenOpencartTest"/>   -->
+      <class name="com.softserve.edu.ScrollTest">
     	 <methods>
-     		<include name="testNumberFigures"></include>
+     		<include name="f3"></include>
      	</methods>
      </class>
-     -->
+    <!-- -->
     </classes>
   </test>   
   
