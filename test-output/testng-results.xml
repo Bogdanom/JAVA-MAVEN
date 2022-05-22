@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-22T17:16:20Z" name="Default suite" finished-at="2022-05-22T17:16:37Z" duration-ms="17038">
+    <groups>
+    </groups>
+    <test started-at="2022-05-22T17:16:20Z" name="Default test" finished-at="2022-05-22T17:16:37Z" duration-ms="17038">
+      <class name="com.softserve.edu.ScrollTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.softserve.edu.ScrollTest@2e9fda69]" started-at="2022-05-22T17:16:20Z" name="beforeClass" finished-at="2022-05-22T17:16:30Z" duration-ms="10564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f1()[pri:0, instance:com.softserve.edu.ScrollTest@2e9fda69]" started-at="2022-05-22T17:16:30Z" name="f1" finished-at="2022-05-22T17:16:30Z" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method signature="f3()[pri:0, instance:com.softserve.edu.ScrollTest@2e9fda69]" started-at="2022-05-22T17:16:31Z" name="f3" finished-at="2022-05-22T17:16:36Z" duration-ms="5112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.softserve.edu.ScrollTest@2e9fda69]" started-at="2022-05-22T17:16:36Z" name="afterClass" finished-at="2022-05-22T17:16:37Z" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.softserve.edu.ScrollTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
