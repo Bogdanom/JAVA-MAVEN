@@ -46,11 +46,11 @@ public class ScrollTest {
 	    	Thread.sleep(1000);//for presentation only
 	    	
 	    	// scroll via action class
-//	    	Actions action = new Actions(driver);
-//	    	action.moveToElement(link).perform();
+	    	Actions action = new Actions(driver);
+	    	action.moveToElement(link).perform();
 	    	
 	    	// scroll via js injection
-	    	((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", link);
+	    	//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", link);
 	    	
 	    	//Assert.assertTrue(price.getText().contains("472.33"));
 	    	Thread.sleep(4000);//for presentation only

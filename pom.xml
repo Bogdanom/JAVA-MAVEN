@@ -13,16 +13,20 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-  
+  <!-- CREDS -->
   <application.password>null123</application.password>
+  <!-- ENCODING -->
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
+  <!-- JAVA -->
   <jdk.source.version>1.8</jdk.source.version>
   <jdk.compiler.version>1.8</jdk.compiler.version>
   <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+   <!-- TEST -->
   <org.junit.version>4.13.2</org.junit.version>
   <org.testng.version>6.14.3</org.testng.version>
   <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
+  <!-- AUTOMATION -->
   <org.seleniumhq.selenium.version>3.141.59</org.seleniumhq.selenium.version>
   <org.seleniumhq.selenium.htmlunit-driver>2.36.0</org.seleniumhq.selenium.htmlunit-driver>
   <apache.commons.io.version>2.11.0</apache.commons.io.version>
@@ -30,20 +34,27 @@
   <maven.os-maven-plugin.version>1.6.2</maven.os-maven-plugin.version>
   <maven.webdriverextensions-maven-plugin.version>3.2.0</maven.webdriverextensions-maven-plugin.version>
   <io.github.bonigarcia.version>3.8.1</io.github.bonigarcia.version>
+  <!-- REPORTS -->
   <testng.reports.directory>./target/surefire-reports/test-output</testng.reports.directory>
   <allure.version>2.13.1</allure.version>
   <aspectj.version>1.9.5</aspectj.version>
+  <!-- MOCKS -->
   <org.mockito.version>1.10.19</org.mockito.version>
   <org.powermock.version>1.7.4</org.powermock.version>
+  <!-- LOGING -->
   <org.slf4j.version>1.7.30</org.slf4j.version>
+  <!-- DB -->
   <net.sourceforge.jtds.version>1.3.1</net.sourceforge.jtds.version>
+  <!-- UTILS -->
   <org.apache.poi.version>4.1.1</org.apache.poi.version>
+  <!-- JSON -->
   <google.gson.version>2.8.6</google.gson.version>
   
   </properties>
   
   <dependencies>
   
+   <!-- TEST -->
     <dependency>
        <groupId>junit</groupId>
        <artifactId>junit</artifactId>
@@ -58,6 +69,7 @@
       <scope>test</scope>
     </dependency>
     
+    <!-- AUTOMATION -->
     <dependency>
        <groupId>org.seleniumhq.selenium</groupId>
        <artifactId>selenium-server</artifactId>
@@ -77,6 +89,7 @@
        <version>${apache.commons.io.version}</version>
     </dependency>
     
+     <!-- LOGING -->
      <dependency>
        <groupId>org.slf4j</groupId>
        <artifactId>slf4j-api</artifactId>
@@ -91,6 +104,7 @@
        <scope>compile</scope>
     </dependency>
     
+     <!-- DB -->
     <dependency>
        <groupId>net.sourceforge.jtds</groupId>
        <artifactId>jtds</artifactId>
